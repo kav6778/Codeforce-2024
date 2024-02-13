@@ -1,3 +1,4 @@
+// https://codeforces.com/contest/1931/problem/D
 // Hashing technique - Find the number of pairs whose sum is divisible by k.
 // Q. Find the number of pairs whose sum is divisible by x and sub is divible by y
 // O(n)
