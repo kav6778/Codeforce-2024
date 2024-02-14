@@ -1,3 +1,4 @@
+//What is the min cost to reach the last from first postion if k=2 length jump is possible
 // Top down method
 // O(n)
 
