@@ -1,5 +1,6 @@
-// https://codeforces.com/contest/1930/problem/A
-
+//https://codeforces.com/contest/1930/problem/A
+//O(n)
+//Q. Find the sum of min of the alternate pairs in the sorted array
 
 #include <bits/stdc++.h>
 using namespace std;
