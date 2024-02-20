@@ -1,0 +1,1 @@
+{"name":"Local: C","url":"c:\\2023\\Algo 2023\\Codeforce\\contest 928 div 4\\C.cpp","tests":[{"id":1708356040202,"input":"7\n12\n1\n2\n3\n1434\n2024\n200000","output":"51\n1\n3\n6\n18465\n28170\n4600002"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\2023\\Algo 2023\\Codeforce\\contest 928 div 4\\C.cpp","group":"local","local":true}
