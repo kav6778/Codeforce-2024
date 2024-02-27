@@ -7,44 +7,44 @@
 using namespace std;
 
 // Function to calculate power
-ll power(ll base, ll exponent) {
-    ll result = 1;
-    while (exponent > 0) {
-        if (exponent % 2 == 1) {
-            result *= base;
+ll power(ll a, ll b) {
+    ll ans = 1;
+    while (b > 0) {
+        if (b % 2 == 1) {
+            ans *= a;
         }
-        base *= base;
-        exponent /= 2;
+        a *= a;
+        b /= 2;
     }
-    return result;
+    return ans;
 }
 
 // Function to solve the problem
 void solve(){
-    ll base_a, base_b, limit;
-    cin >> base_a >> base_b >> limit;
+    ll a, b, l;
+    cin >> a >> b >> l;
 
-    set<ll> divisors;
+    set<ll> s;
 
-    // Loop to iterate through all possible powers of base_a
+    // Loop to iterate through all possible powers of a
     for (ll x = 0;; x++) {
-        ll powered_a = power(base_a, x);
-        if (powered_a > limit)
+        ll c_a = power(a, x);
+        if (c_a > l)
             break;
         
-        // Loop to iterate through all possible powers of base_b
-        for (ll y = 0;; y++) {
-            ll temp = powered_a * power(base_b, y);
-            if (temp > limit)
+        // Loop to iterate through all possible powers of b
+        for (ll j = 0;; j++) {
+            ll temp = c_a * power(b, j);
+            if (temp > l)
                 break;
-            if (limit % temp == 0) {
-                divisors.insert(limit / temp);
+            if (l % temp == 0) {
+                s.insert(l / temp);
             }
         }
     }
 
-    ll result = divisors.size();
-    cout << result << "\n";
+    ll ans = s.size();
+    cout << ans << "\n";
 }
 
 // Main function
@@ -58,3 +58,4 @@ signed main(){
     }
     return 0;
 }
+
