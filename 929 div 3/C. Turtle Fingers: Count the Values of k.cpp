@@ -47,6 +47,24 @@ void solve(){
     cout << ans << "\n";
 }
 
+/* void newsol(){
+    int a,b,l; cin>>a>>b>>l;
+
+    set<int> ans;
+    ll int val1=1;
+    
+    for(int x=0; x<20 && val1<=l; x++){
+        ll int val2 = 1;
+        for(int y=0; y<20 && val1*val2<=l; y++){
+            if(l%(val1*val2) == 0) ans.insert(l/(val1*val2));
+            val2 *= b;
+        }
+        val1 *= a;
+    }
+    cout<<ans.size()<<endl;
+} */
+
+
 // Main function
 signed main(){
     ios_base::sync_with_stdio(0);
